@@ -19,4 +19,6 @@ const dataJSON = dateBuffer.toString()
 const data = JSON.parse(dataJSON)
 data.name = "Ahmed",
 data.age = 28
+let user = JSON.stringify(data)
+fs.writeFileSync('1-json.json', user)
 console.log(data)
